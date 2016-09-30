@@ -1,0 +1,562 @@
+/**********************************************************
+GENERAL
+**********************************************************/
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**********************************************************
+LAYOUT AND CONTAINER STYLING
+**********************************************************/
+
+
+/*MAIN BODY FLEX CONTAINER*/
+
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*HEADER AND FOOTER CONTAINER*/
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/*ADDRESS CONTAINER*/
+#address {
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+/*MAIN CONTENT CONTAINER*/
+
+.content {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 20px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/*DESCRIPTION PARAGRAPH*/
+
+.description {
+    margin: 0 2rem 100px;
+    padding-top: 50px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/*SECTION1 CONTAINER*/
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*SUB-PAGE-TITLE STYLE*/
+.sub-page-title {
+  margin-top: 50px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/*GENERAL LISTINGS CONTAINER*/
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*SEASONS FULL CONTENT CONTAINER*/
+.seasons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
+
+/**********************************************************
+LINKS STYLING
+**********************************************************/
+
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #91116b;
+}
+
+.headings-text a:link, .seasons-header a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.headings-text a:visited, .seasons-header a:visited {
+    color: #fff;
+}
+
+.headings-text a:hover {
+    color: #fff;
+}
+
+a.section-title:link,
+a.seasons-title:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.section-title:visited,
+a.seasons-title:visited {
+    color: #fff;
+}
+
+.button:hover {
+  background-color:  #00457C;
+  color: #fff;
+  transition-property: background-color;
+  transition-duration: .5s;
+
+}
+
+/*ACTIVE LINK STYLE*/
+a.active {
+  position:relative;
+}
+
+a.active:active {
+  top: 1px;
+  left:1px;
+}
+
+a.active:hover {
+  text-shadow: 5px 5px 10px #000;
+
+}
+
+/*SEASONS SECTION LINK STYLE*/
+.full-seasons a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.full-seasons a:visited {
+    color: #fff;
+}
+
+.full-seasons a:hover {
+    color: #fff;
+}
+
+/**********************************************************
+LISTS  STYLING
+**********************************************************/
+
+ul.list {
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.list-item-name {
+  text-align: left;
+}
+
+.list-item-time {
+  padding-left: 50px;
+  margin-top: 5px;
+}
+
+.list-item-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  box-shadow: 20px 20px 30px #2b2a2a;
+  border-radius: 50px 90px;
+}
+
+.listings li {
+  margin-bottom: 25px;
+}
+
+
+
+
+/**********************************************************
+HEADER STYLING
+**********************************************************/
+
+.main-header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0)70%, rgba(255, 255, 255, 1)), url('../img/tallahassee-night.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-shadow: #000 5px 5px 5px;
+    height: 400px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings-text {
+    font-family: 'Droid Sans', sans-serif;
+    color: ghostwhite;
+}
+
+div.headings-text h1 {
+    font-size: 16vmin;
+    padding-bottom: -20px;
+}
+
+.border-bottom {
+    border-bottom: 3px solid ghostwhite;
+    margin-top: -5px;
+    max-width: 800px;
+    padding: 0;
+}
+
+div.headings-text h3 {
+    font-size: 4vmin;
+    text-transform: uppercase;
+    word-spacing: -10px;
+    letter-spacing: 20px;
+    padding-top: 5px;
+}
+
+
+/**********************************************************
+HOME PAGE - MAIN CONTENT - SECTION STYLING
+**********************************************************/
+
+/*COLUMN LAYOUT*/
+.explore-column, .stay-column, .events-column, .seasons-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*BACKGROUND IMAGE STYLING*/
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+}
+
+
+/*SECTION TITLE STYLING*/
+
+.section-title,
+.seasons-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+    letter-spacing: 10px;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: #000 4px 4px 3px;
+}
+
+
+/*EXPLORE COLUMN*/
+
+.explore-title {
+    background-image: url('../img/web-canopy-2.jpg');
+}
+
+
+/*STAY COLUMN*/
+
+.stay-title {
+    background-image: url('../img/aloft.jpg');
+}
+
+/*EVENTS COLUMN*/
+
+.events-title {
+    background-image: url('../img/cascades-concert.jpg');
+}
+
+/*LEARN MORE BUTTON*/
+.button-link {
+    align-self: center;
+}
+
+.button {
+    border: 2px solid #00457C;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    color:  #00457C;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/**********************************************************
+HOME PAGE - SEASONS SECTION STYLING
+**********************************************************/
+
+/*SEASON SECTION HEADER*/
+.seasons-header {
+    background-image: url('../img/2012-09_fsu-1024x682.jpg');
+}
+
+/*SEASONS GRID LAYOUT*/
+.full-seasons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.index-grid {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+.index-grid li {
+    list-style: none;
+    background-size: cover;
+}
+
+.winter {
+    background-image: url('../img/mobile_tallahassee-winter-festival-tallahassee-fl.jpg');
+}
+
+.spring {
+    background-image: url('../img/VFCASCADES-1024x682.jpg');
+}
+
+.summer {
+    background-image: url('../img/wakullariverfromtower.jpg');
+}
+
+.fall {
+    background-image: url('../img/fallfrenzy.jpg');
+}
+
+
+/**********************************************************
+EVENTS PAGE - EVENTS SECTION STYLING
+**********************************************************/
+
+.listings-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-size: 4em;
+    color: ghostwhite;
+    letter-spacing: 5px;
+    text-shadow: #000 4px 4px 3px;
+    box-shadow: 0 20px 30px #2b2a2a;
+}
+
+.september {
+    background-image: url('../img/VFCASCADES-1024x682.jpg');
+}
+
+.october{
+    background-image: url('../img/web-Tallahassee-at-night.jpg');
+}
+
+.november {
+    background-image: url('../img/fallfrenzy.jpg');
+}
+
+.december {
+    background-image: url('../img/web-big_festivaltents.jpg');
+}
+
+/**********************************************************
+PARKS PAGE STYLING - HOTELS PAGE STYLING
+**********************************************************/
+
+/*EXTRA SPACE BETWEEN PARK LISTINGS*/
+.space {
+  margin-bottom: 50px;
+}
+
+/*PARK AND HOTEL LISTING BOLD STYLE*/
+.listings-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/*PARK DESCRIPTION SENTENCE*/
+q.park-description {
+  display: block;
+}
+
+/*HOTEL NAME EXTRA TOP MARGIN*/
+.hotel {
+  margin-bottom: 80px;
+}
+
+.happenings {
+  margin-top: 30px;
+}
+
+/**********************************************************
+IMAGE STYLING
+**********************************************************/
+.overlay {
+ position: relative;
+}
+
+.overlay:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+}
+
+.overlay:hover:after  {
+  opacity: 1;
+}
+
+.gradient:after {
+   background: radial-gradient(rgba(255, 255, 255,.1) 40%, rgba(255, 255, 255, 0.7));
+   border-radius: 15px;
+   transition-property: opacity;
+   transition-duration: .5s;
+}
+
+/**********************************************************
+FOOTER SECTION STYLING
+**********************************************************/
+
+.info-section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-primary,
+.info-secondary {
+  display:flex;
+  flex-direction: column;
+}
+.keep-up {
+    font-weight: bold;
+}
+
+.social-media-icons {
+    list-style: none;
+    padding-left: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media-icons li {
+    padding-bottom: 10px;
+    list-style-position: inside;
+}
+
+.icons {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+
+
+
+.pinterest a {
+    background-image: url('../img/pinterest.png');
+}
+
+
+.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+.instagram a {
+    background-image: url('../img/instagram.png');
+}
+
+.instagram a {
+    background-image: url('../img/instagram.png');
+}
+
+.facebook a {
+    background-image: url('../img/facebook.png');
+}
+
+.youtube a {
+    background-image: url('../img/youtube.png');
+}
+
+.footer {
+    font-size: .8em;
+}
+
+#home-button {
+  margin-bottom: 10px;
+}
+.back-home {
+  display: block;
+  margin-top: 10px;
+}

@@ -1,0 +1,249 @@
+@media screen and (min-width: 690px) {
+
+/**********************************************************
+HOME PAGE - STYLING
+**********************************************************/
+
+    /*MULTI-COLUM LAYOUT STYLING*/
+    .description {
+        width: 80%;
+        margin-bottom: 150px;
+    }
+    /*MAIN CONTENT SECTION*/
+    div.section1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .col {
+        width: 45%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .background {
+        box-shadow: 5px 5px 20px #000;
+    }
+
+/*BORDER RADIUS*/
+    .radius {
+        border-radius: 15px;
+    }
+
+    .events-column,
+    .seasons-column {
+      width: 95%;
+    }
+
+    /*ACTIVE SECTION LINKS STYLE*/
+    .title-active {
+        position: relative;
+    }
+
+    .title-active:active {
+        top: 8px;
+        left: 8px;
+    }
+
+    /*SEASONS GRID LAYOUT STYLING*/
+    div.full-seasons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*LISTS CONTAINERS*/
+    ul.index-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    li.section-title {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    a.seasons-title {
+      width: 45%;
+      margin-bottom: 30px;
+    }
+
+    /*TEXT STYLINGS*/
+    .description {
+      font-size: 1.7em;
+    }
+
+    .section-title,
+    .seasons-title {
+      font-size: 1.8em;
+    }
+
+/**********************************************************
+  PARK PAGE - COLUMN - STYLING
+**********************************************************/
+
+/*TEXT STYLINGS*/
+.sub-page-title {
+  font-size: 2em;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.place-col {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/**********************************************************
+  EVENTS PAGE - COLUMN - STYLING
+**********************************************************/
+
+.events-section,
+.seasons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.listings {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  justify-content: space-between;
+}
+
+.listings-col {
+  width: 95%;
+}
+
+.listings-title {
+  border-radius: 15px;
+  font-size: 5em;
+  margin-bottom: 60px;
+}
+
+/**********************************************************
+SEASONS PAGE - STYLING
+**********************************************************/
+
+/**********************************************************
+  FOOTER - STYLING
+**********************************************************/
+    /*FOOTER MULTI-COLUMN*/
+    .info-section {
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1.3em;
+    }
+
+    .footer {
+      font-size: 1.2em;
+    }
+
+    .info-primary,
+    .info-secondary {
+      justify-content: flex-start;
+      align-content: flex-start;
+    }
+    .info-primary {
+      width: 50%;
+      margin-right: 20px;
+    }
+    .logo-visit {
+      align-self: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 921px) {
+
+/**********************************************************
+HOME PAGE - STYLING
+**********************************************************/
+
+  .col,
+  .col3 {
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  div.seasons-column p {
+    height: 160px;
+  }
+
+  ul.index-grid {
+    width: 90%;
+    height: 500px;
+    justify-content: space-around;
+  }
+
+/**********************************************************
+  EXPLORE AND STAY PAGES - STYLING
+**********************************************************/
+
+
+.list-item-name {
+  font-size: 1.5em;
+}
+
+.list-item-image {
+  width: 300px;
+  height: 300px;
+
+}
+
+/**********************************************************
+  EVENTS PAGE - STYLING
+**********************************************************/
+
+.listings-col {
+  width: 45%;
+}
+
+.events-section,
+.seasons-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.listings-title {
+  font-size: 3em;
+}
+
+.listings {
+  font-size: .9rem;
+}
+
+
+  /*FOOTER COLUMN LAYOUT*/
+  div.info-section {
+    justify-content: center;
+  }
+
+}
